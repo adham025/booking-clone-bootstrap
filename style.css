@@ -1,0 +1,126 @@
+:root {
+  --dark-blue: #003b95;
+  --light-blue: #006ce4;
+  --hover: #1a50a1;
+  --yellow: #febb02;
+  --green: #008234;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Start Navbar */
+
+.navbar,
+.heading {
+  background-color: var(--dark-blue);
+}
+a {
+  text-decoration: none !important;
+}
+.navbar-nav .nav-link.item:hover {
+  background-color: var(--hover);
+}
+.navbar-nav .nav-link.item2 {
+  border-radius: 30px;
+}
+
+.navbar-nav .nav-link.item2:hover {
+  background-color: var(--hover);
+  border-radius: 30px;
+}
+
+.navbar-nav .active {
+  background-color: var(--hover);
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.navbar-nav .one {
+  color: var(--yellow);
+}
+
+.text {
+  background-color: var(--dark-blue);
+  padding: 1vw 0 5vw 15vw;
+  color: white;
+}
+
+/* Form */
+.input-container {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-input-height {
+  height: 50px;
+  padding-left: 2rem;
+  background-color: white;
+}
+
+.color {
+  background-color: var(--light-blue) !important;
+  color: white !important;
+}
+
+.color:hover {
+  background-color: var(--dark-blue) !important;
+}
+.input-container input {
+  padding-left: 2rem;
+}
+.card-img-overlay,
+.pointer {
+  cursor: pointer;
+}
+.dark {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.6rem;
+  line-height: 1;
+  border-radius: 2px;
+}
+.green {
+  background-color: var(--green);
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  line-height: 1;
+  border-radius: 2px;
+  height: 18px !important;
+}
+
+.dashed {
+  text-decoration: line-through;
+  color: red !important;
+}
+.item3 {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.item3:hover {
+  background-color: var(--hover);
+}
+.fa-heart:hover {
+  opacity: 0.9;
+}
