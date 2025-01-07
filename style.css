@@ -106,10 +106,12 @@ a {
 .input-container input {
   padding-left: 2rem;
 }
+
 .card-img-overlay,
 .pointer {
   cursor: pointer;
 }
+
 .dark {
   background-color: var(--dark-blue);
   color: white;
