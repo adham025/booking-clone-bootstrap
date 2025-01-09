@@ -12,10 +12,8 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,24 +30,22 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container ps-5 pe-5">
-        <a class="font-weight-bold text-white ms-5 ps-3 h4" href="#">
-          Booking.com
-        </a>
+      <div class="container text-md-start">
+        <a class="font-weight-bold text-white h4" href="#"> Booking.com </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#main"
+          aria-controls="main"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-2">
-            <li class="nav-item">
+            <li class="">
               <a
                 class="nav-link item text-white h6 px-3 mt-3"
                 href="#"
@@ -115,16 +111,16 @@
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container ps-5 pe-5">
-        <div class="navbar-collapse col-lg-6">
+    <div class="landing">
+      <div class="container">
+        <div class="col-lg-6">
           <ul
-            class="navbar-nav ms-5 ps-3 d-flex flex-row gap-2"
-            style="overflow-x: auto; white-space: nowrap"
+            class="navbar-nav d-flex flex-wrap flex-lg-row flex-lg-nowrap gap-2"
+            style="white-space: nowrap"
           >
-            <li class="nav-item">
+            <li class="nav-item col-6 col-md-4 col-lg-auto">
               <a
-                class="nav-link active text-white h6 px-3 d-flex align-items-center"
+                class="nav-link active text-white h6 d-flex align-items-center"
                 href="#"
               >
                 <i
@@ -134,7 +130,7 @@
                 Stays
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item col-6 col-md-4 col-lg-auto">
               <a
                 class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
                 href="#"
@@ -146,7 +142,7 @@
                 Flights
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item col-6 col-md-4 col-lg-auto">
               <a
                 class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
                 href="#"
@@ -155,7 +151,7 @@
                 Car rentals
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item col-6 col-md-4 col-lg-auto">
               <a
                 class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
                 href="#"
@@ -167,7 +163,7 @@
                 Attractions
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item col-6 col-md-4 col-lg-auto">
               <a
                 class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
                 href="#"
@@ -182,21 +178,21 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
 
-    <div class="text container-fluid pt-5 pb-5" style="padding-left: 7rem">
-      <p class="h1 ps-5 ms-5">Find your next stay</p>
-      <p class="h4 ps-5 ms-5">
-        Search low prices on hotels, homes and much more...
-      </p>
+        <div class="text pt-5 pb-5">
+          <p class="responsive-heading mb-0">Find your next stay</p>
+          <p class="h5 mb-0">
+            Search low prices on hotels, homes and much more...
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="between container" style="padding-left: 8rem">
-      <div class="container pt-4">
+    <div class="between">
+      <div class="container">
         <div class="row justify-content-start align-items-center mt-5">
           <div
-            class="col-sm-12 col-md-3 col-lg-4 p-0 border border-5 border-warning rounded-start"
+            class="col-sm-12 col-md-3 col-lg-4 p-0 border-top border-bottom border-start border-5 border-warning rounded-start"
           >
             <div class="input-container">
               <i class="fa-solid fa-bed"></i>
@@ -217,7 +213,9 @@
               />
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 p-0 border border-5 border-warning">
+          <div
+            class="col-sm-12 col-md-3 col-lg-4 p-0 border-top border-bottom border-5 border-warning"
+          >
             <div class="input-container">
               <i class="fa-regular fa-user"></i>
               <input
@@ -228,7 +226,7 @@
             </div>
           </div>
           <div
-            class="col-sm-12 col-md-2 p-0 border border-5 border-warning rounded-end"
+            class="col-sm-12 col-md-1 p-0 border border-5 border-warning rounded-end"
           >
             <input
               type="submit"
@@ -240,12 +238,14 @@
       </div>
     </div>
 
-    <div class="container mt-0 mb-5" style="padding-left: 7rem">
+    <div
+      class="container offer mt-0 mb-5"
+      style="padding-left: 7rem; position: relative"
+    >
       <h3 class="pt-5">Offers</h3>
       <p class="text-black-50">Promotions, deals and special offers for you</p>
       <div class="row g-0">
-        <!-- First Card -->
-        <div class="col-sm-12 col-md-12 col-lg-6 p-0">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-sm-8 col-md-8 col-lg-8">
@@ -277,7 +277,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 p-0">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-sm-8 col-md-8 col-lg-8">
@@ -1016,7 +1016,9 @@
               style="height: 250px; object-fit: cover"
             />
             <div class="card-body">
-              <p class="mb-0">6 best ryokans in Japan to rejuvenate yourself</p>
+              <p class="fs-6 mb-0">
+                6 best ryokans in Japan to rejuvenate yourself
+              </p>
               <p class="text-black-50" style="font-size: 0.8rem">
                 Discover unmissable ryokans to relax and unwind in style.
               </p>
@@ -1032,7 +1034,9 @@
               style="height: 250px; object-fit: cover"
             />
             <div class="card-body">
-              <p class="mb-0">7 best places in Asia to celebrate Christmas</p>
+              <p class="mb-0 fs-6">
+                7 best places in Asia to celebrate Christmas
+              </p>
               <p class="text-black-50" style="font-size: 0.8rem">
                 Discover the shimmering lights and festive sights of Asia's
                 holiday season.
@@ -1043,73 +1047,221 @@
       </div>
     </div>
 
-    <!-- <div class="container ps-5 pe-5 mb-5">
-      <div class="navbar-collapse">
+    <div class="container" style="padding-left: 7rem">
+      <p class="h4 mb-3">Popular with travellers from Egypt</p>
+      <div class="col-lg-6 mb-4">
         <ul
-          class="navbar-nav ms-5 ps-3 d-flex flex-row gap-2"
-          style="overflow-x: auto; white-space: nowrap"
+          class="navbar-nav d-flex flex-wrap flex-lg-row flex-lg-nowrap gap-2"
+          style="white-space: nowrap"
         >
-          <li class="nav-item active">
-            <a
-              class="nav-link text-white h6 px-3 d-flex align-items-center"
-              href="#"
-            >
-              <i
-                class="fa-solid fa-bed"
-                style="color: #ffffff; margin-right: 8px"
-              ></i>
-              Stays
+          <li class="col-6 col-md-4 col-lg-auto">
+            <a class="active2 h6 d-flex align-items-center" href="#">
+              Domestic cities
             </a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
-              href="#"
-            >
-              <i
-                class="fa-solid fa-jet-fighter me-2"
-                style="color: #ffffff"
-              ></i>
-              Flights
+          <li class="col-6 col-md-4 col-lg-auto">
+            <a class="item30 h6 px-3 d-flex align-items-center" href="#">
+              International cities
             </a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
-              href="#"
-            >
-              <i class="fa-solid fa-car me-2" style="color: #ffffff"></i>
-              Car rentals
+          <li class="col-6 col-md-4 col-lg-auto">
+            <a class="item30 h6 px-3 d-flex align-items-center" href="#">
+              Regions
             </a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
-              href="#"
-            >
-              <i
-                class="fa-solid fa-dharmachakra me-2"
-                style="color: #ffffff"
-              ></i>
-              Attractions
+          <li class="col-6 col-md-4 col-lg-auto">
+            <a class="item30 h6 px-3 d-flex align-items-center" href="#">
+              Countries
             </a>
           </li>
-          <li class="nav-item">
-            <a
-              class="nav-link item2 text-white h6 px-3 d-flex align-items-center"
-              href="#"
-            >
-              <img
-                style="width: 20px; margin-right: 5px"
-                src="images/taxi.webp"
-                alt=""
-              />
-              Airport taxis
+          <li class="col-6 col-md-4 col-lg-auto">
+            <a class="item30 h6 px-3 d-flex align-items-center" href="#">
+              Places to stay
             </a>
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
+
+    <div class="footer2 py-3">
+      <div class="container" style="padding-left: 7rem">
+        <div class="row gap-5">
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <ul class="list-unstyled">
+                <li class="mb-3 pointer">Cairo hotels</li>
+                <li class="mb-3 pointer">Luxor hotels</li>
+                <li class="mb-3 pointer">6th Of October hotels</li>
+                <li class="mb-3 pointer">Fayoum Center hotels</li>
+                <li class="mb-3 pointer">Ras El Bar hotels</li>
+              </ul>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <a
+                  class="item blue px-2 py-1 h6 d-flex align-items-center rounded"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Select your currency"
+                >
+                  + Show more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <ul class="list-unstyled mb-5">
+                <li class="mb-3 pointer">Alexandria hotels</li>
+                <li class="mb-3 pointer">Dahab hotels</li>
+                <li class="mb-3 pointer">El Gouna hotels</li>
+                <li class="mb-3 pointer">El Alamein hotels</li>
+                <li class="mb-3 pointer">Al ‘Ajamī hotels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <ul class="list-unstyled mb-5">
+                <li class="mb-3 pointer">Hurghada hotels</li>
+                <li class="mb-3 pointer">Aswan hotels</li>
+                <li class="mb-3 pointer">Nuweiba hotels</li>
+                <li class="mb-3 pointer">Sheikh Zayed hotels</li>
+                <li class="mb-3 pointer">Mansoura hotels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <ul class="list-unstyled mb-5">
+                <li class="mb-3 pointer">Ain Sokhna hotels</li>
+                <li class="mb-3 pointer">Marsa Matruh hotels</li>
+                <li class="mb-3 pointer">Ras Sedr hotels</li>
+                <li class="mb-3 pointer">Abu Simbel hotels</li>
+                <li class="mb-3 pointer">Madinaty hotels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <ul class="list-unstyled mb-5">
+                <li class="mb-3 pointer">Sharm El Sheikh hotels</li>
+                <li class="mb-3 pointer">Port Said hotels</li>
+                <li class="mb-3 pointer">Siwa hotels</li>
+                <li class="mb-3 pointer">Marsa Alam City hotels</li>
+                <li class="mb-3 pointer">Safaga hotels</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer py-3">
+      <div class="container" style="padding-left: 7rem">
+        <div class="row gap-5">
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <p class="h6 mb-3">Support</p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-2 item9 pointer">Cairo hotels</li>
+                <li class="mb-2 item9 pointer">Manage your trips</li>
+                <li class="mb-2 item9 pointer">Contact Customer Service</li>
+                <li class="mb-2 item9 pointer">Safety resource centre</li>
+              </ul>
+              <div class="p-4 d-none d-lg-block"></div>
+              <div class="d-flex align-items-center gap-3 mt-5">
+                <a
+                  class="item10 grey px-2 py-1 d-flex align-items-center rounded"
+                  href="#"
+                >
+                  <img
+                    class="rounded-pill"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Select your language"
+                    src="images/england.png"
+                    alt="Language"
+                    width="25"
+                    height="25"
+                  />
+                </a>
+                <a
+                  class="item grey px-2 py-1 h6 d-flex align-items-center rounded"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Select your currency"
+                >
+                  EGP
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <p class="h6 mb-3">Discover</p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-2 item9 pointer">Genius loyalty programme</li>
+                <li class="mb-2 item9 pointer">Seasonal and holiday deals</li>
+                <li class="mb-2 item9 pointer">Travel articles</li>
+                <li class="mb-2 item9 pointer">Booking.com for Business</li>
+                <li class="mb-2 item9 pointer">Traveller Review Awards</li>
+                <li class="mb-2 item9 pointer">Car hire</li>
+                <li class="mb-2 item9 pointer">Flight finder</li>
+                <li class="mb-2 item9 pointer">Restaurant reservations</li>
+                <li class="mb-2 item9 pointer">
+                  Booking.com for Travel Agents
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <p class="h6 mb-3">Terms and settings</p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-2 item9 pointer">Privacy & cookies</li>
+                <li class="mb-2 item9 pointer">Terms and conditions</li>
+                <li class="mb-2 item9 pointer">Partner dispute</li>
+                <li class="mb-2 item9 pointer">Modern Slavery Statement</li>
+                <li class="mb-2 item9 pointer">Human Rights Statement</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <p class="h6 mb-3">Partners</p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-2 item9 pointer">Extranet login</li>
+                <li class="mb-2 item9 pointer">Partner help</li>
+                <li class="mb-2 item9 pointer">List your property</li>
+                <li class="mb-2 item9 pointer">Become an affiliate</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="info mb-5">
+              <p class="h6 mb-3">About</p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-2 item9 pointer">About Booking.com</li>
+                <li class="mb-2 item9 pointer">How we work</li>
+                <li class="mb-2 item9 pointer">Sustainability</li>
+                <li class="mb-2 item9 pointer">Press centre</li>
+                <li class="mb-2 item9 pointer">Careers</li>
+                <li class="mb-2 item9 pointer">Investor relations</li>
+                <li class="mb-2 item9 pointer">Corporate contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center text-black-50">
+          Booking.com is part of Booking Holdings Inc., the world leader in
+          online travel and related services.
+          <br />
+          Copyright © 1996–2025 Booking.com™. All rights reserved. <br />
+          Adham Ahmed Galal
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>

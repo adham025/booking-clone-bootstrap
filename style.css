@@ -6,10 +6,19 @@
   --green: #008234;
   --link: #187ae5;
   --link-hover: #f0f6fd;
+  --selected: #f2f2f2;
+  --footer: #f5f5f5;
+  --footer-hover: #dfdfdf;
+  --container-padding: 7rem;
+  --footer-color: #1a1a1a;
 }
+
 body {
   font-family: "Roboto", sans-serif !important;
   font-size: 0.8rem !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -26,20 +35,27 @@ p {
   font-weight: 400;
   line-height: 1.5;
 }
-
-/* Start Navbar */
-
-.navbar,
-.heading {
-  background-color: var(--dark-blue) !important;
-}
 a {
   text-decoration: none !important;
 }
+
+/* Start Navbar */
+
+.navbar {
+  background-color: var(--dark-blue) !important;
+}
+.navbar .container,
+.landing .container,
+.footer {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
 .navbar-nav .nav-link.item:hover,
 .navbar-nav .nav-link.item10:hover {
   background-color: var(--hover);
 }
+
 .navbar-nav .nav-link.item10 {
   transform: translateY(-5px);
   display: inline-flex;
@@ -59,22 +75,43 @@ a {
   background-color: var(--hover);
   border-radius: 30px;
   border: 1px solid white;
-  padding: 6px;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-nav .one {
   color: var(--yellow);
 }
+/*End Navbar*/
+
+.landing {
+  background-color: var(--dark-blue);
+  min-height: calc(40vh - 72px);
+}
 
 .text {
-  background-color: var(--dark-blue);
   color: white;
+  padding-top: 2rem;
+}
+
+.responsive-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .responsive-heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
 
 /* Form */
-.between {
+
+.between .container {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
   position: relative;
-  top: -105px;
+  top: -80px;
 }
 
 .input-container {
@@ -93,6 +130,35 @@ a {
   height: 50px;
   padding-left: 2rem;
   background-color: white;
+}
+@media (max-width: 576px) {
+  .between .col-sm-12 {
+    border: 5px solid #ffc107 !important;
+    border-radius: 5px !important;
+  }
+
+  .between .col-sm-12:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.offer {
+  position: relative;
+}
+
+.offer .row {
+  position: relative;
+}
+
+.offer::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--light-blue);
+  position: absolute;
+  bottom: -20px;
+  left: 51.1%;
+  border-radius: 50%;
 }
 
 .color {
@@ -149,9 +215,16 @@ a {
 .item4:hover {
   text-decoration: underline !important;
 }
+.item9:hover {
+  text-decoration: underline !important;
+  color: var(--footer-color) !important;
+}
 
 @media screen and (max-width: 768px) {
   .item3 {
+    display: none;
+  }
+  .offer::after {
     display: none;
   }
 }
@@ -186,4 +259,67 @@ div.lock {
 .card-img-wrapper:hover .card-img {
   transform: scale(1.1);
   border-radius: 25px !important;
+}
+
+.active2 {
+  background-color: var(--link-hover);
+  border-radius: 30px;
+  border: 1px solid var(--light-blue);
+  padding: 0.5rem 1rem;
+  color: var(--light-blue) !important;
+}
+
+.item30 {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  color: black !important;
+  padding: 0.5rem 1rem;
+}
+
+.item30:hover {
+  background-color: var(--selected) !important;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: var(--footer);
+}
+.grey {
+  padding: 0.4rem 0.8rem; /* Reduced padding for smaller background space */
+  transition: background-color 0.3s ease;
+}
+
+.grey:hover {
+  background-color: var(--footer-hover);
+}
+
+.item10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.item10:hover {
+  background-color: var(--footer-hover);
+}
+
+.d-flex.align-items-center.gap-2 > a {
+  border-radius: 4px;
+}
+
+.grey.h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0.1rem);
+}
+.blue {
+  color: var(--light-blue) !important;
+  padding: 0.5rem 1rem !important;
+}
+.blue:hover {
+  background-color: var(--link-hover) !important;
+  border-radius: 4px;
 }
